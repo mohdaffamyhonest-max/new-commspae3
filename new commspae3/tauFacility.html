@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Site made with Mobirise Website Builder v6.1.9, https://mobirise.com -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="generator" content="Mobirise v6.1.9, mobirise.com" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo2.png"
+      type="image/x-icon"
+    />
+    <meta name="description" content="" />
+
+    <title>Facility</title>
+    <link
+      rel="stylesheet"
+      href="assets/web/assets/mobirise-icons2/mobirise2.css"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/parallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/dropdown/css/style.css" />
+    <link rel="stylesheet" href="assets/socicon/css/styles.css" />
+    <link rel="stylesheet" href="assets/theme/css/style.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+    /></noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="assets/mobirise/css/mbr-additional.css?v=wGaP6D"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/mobirise/css/mbr-additional.css?v=wGaP6D"
+      type="text/css"
+    />
+
+    <style>
+      .facility-section {
+        padding: 80px 0;
+      }
+
+      .facility-title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .facility-subtitle {
+        text-align: center;
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 10px auto 40px auto;
+        line-height: 1.6;
+      }
+
+      .facility-slider img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .carousel-fade .carousel-item {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .carousel-fade .carousel-item.active {
+        opacity: 1;
+      }
+
+      .facility-carousel {
+        margin-bottom: 40px;
+      }
+
+      .facility-carousel img {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+
+      .facility-grid img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .facility-grid img:hover {
+        transform: scale(1.05);
+      }
+
+      .facility-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 40px;
+      }
+
+      .facility-line {
+        width: 80px;
+        height: 4px;
+        background: #007bff;
+        border-radius: 4px;
+        margin-bottom: 25px;
+      }
+
+      .lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(4px);
+        background: rgba(0, 0, 0, 0.75);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .lightbox-overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 12px;
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .facility-slider-container {
+        overflow-x: scroll;
+        white-space: nowrap;
+        width: 100%;
+        display: block;
+        overflow-x: scroll;
+      }
+
+      #facilityAutoSlider {
+        width: 100%;
+      }
+
+      .facility-slider img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        display: inline-block;
+        margin-right: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        scroll-snap-align: start;
+        transition: transform 0.3s ease;
+      }
+
+      .facility-slider img:hover {
+        transform: scale(1.04);
+      }
+
+      .facility-slider-container::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      .facility-slider {
+        display: flex;
+        width: max-content;
+      }
+
+      .facility-hover-box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .facility-hover-box img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .facility-hover-box:hover img {
+        transform: scale(1.05);
+      }
+
+      .facility-hover-text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.55);
+        color: #fff;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        opacity: 0;
+        transition: 0.3s ease;
+      }
+
+      .facility-hover-box:hover .facility-hover-text {
+        opacity: 1;
+      }
+
+      .facility-slider-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.facility-slider-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.facility-slider-item:hover img {
+  transform: scale(1.05);
+}
+
+.facility-slider-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.3s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.facility-slider-item:hover .facility-slider-caption {
+  opacity: 1;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <section
+      data-bs-version="5.1"
+      class="menu menu3 cid-v2CzHVR1mP custom-padding"
+      once="menu"
+      id="menu03-0"
+    >
+      <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-brand"></div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-bs-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav nav-dropdown nav-right navbar-nav-top-padding"
+              data-app-modern-menu="true"
+            >
+              <li class="nav-item">
+                <a class="nav-link link text-black display-4" href="#header17-1"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black display-4"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li>
+                    <a class="dropdown-item" href="tauDetail.html"
+                      >History of TAU</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tauVisi.html"
+                      >Vission & Mission</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tauFacility.html"
+                      >Facility</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accreCertif.html"
+                      >accreditation Certificate</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black show display-4"
+                  href="#gallery05-4"
+                  aria-expanded="false"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black display-4"
+                  href="#contacts02-a"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div class="icons-menu">
+              <a class="iconfont-wrapper" href="https://mobiri.se">
+                <span class="p-2 mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
+              </a>
+              <a class="iconfont-wrapper" href="https://mobiri.se">
+                <span
+                  class="p-2 mbr-iconfont mobi-mbri-letter mobi-mbri"
+                ></span>
+              </a>
+              <a class="iconfont-wrapper" href="https://mobiri.se">
+                <span
+                  class="p-2 mbr-iconfont mobi-mbri-map-pin mobi-mbri"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="facility-section" id="facility-tau">
+      <div class="container">
+        <h2 class="facility-title">Facility</h2>
+        <p class="facility-subtitle">
+          Kampus dengan fasilitas pendidikan dan sarana lainnya yang mendukung
+          segala macam aktivitas para mahasiswa dan warga kampus.
+        </p>
+
+        <section class="container mt-5">
+          <h2 class="facility-title">Ruang Kelas</h2>
+
+          <div class="row facility-grid mt-4">
+            <div class="col-md-3 mb-4">
+              <img src="assets/images/facility/Kelas1.jpg" />
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <img src="assets/images/facility/Kelas2.jpg" />
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <img src="assets/images/facility/Kelas3.jpg" />
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <img src="assets/images/facility/Kelas4.jpg" />
+            </div>
+          </div>
+
+          <h2 class="facility-title">Perpustakaan</h2>
+
+          <div class="row facility-grid mt-4">
+            <div class="col-md-4 mb-4">
+              <img src="assets/images/facility/Perpustakaan.jpg" />
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <img src="assets/images/facility/Perpustakaan2.jpg" />
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <img src="assets/images/facility/Perpustakaan3.jpg" />
+            </div>
+          </div>
+
+          <h2 class="facility-title">Lapangan</h2>
+
+<div class="row facility-grid mt-4">
+
+  <div class="col-md-4 mb-4">
+    <div class="facility-hover-box">
+      <img src="assets/images/facility/Lapangan Futsal.jpg" alt="Lapangan Futsal" />
+      <div class="facility-hover-text">Lapangan Futsal</div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="facility-hover-box">
+      <img src="assets/images/facility/Lapangan Futsal2.jpg" alt="Lapangan Futsal 2" />
+      <div class="facility-hover-text">Lapangan Futsal</div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="facility-hover-box">
+      <img src="assets/images/facility/Lapangan Tenis.jpg" alt="Lapangan Tenis" />
+      <div class="facility-hover-text">Lapangan Tenis</div>
+    </div>
+  </div>
+
+</div>
+
+          </div>
+
+          <h2 class="facility-title">Fasilitas Umum</h2>
+
+          <div class="facility-slider-container" id="facilityAutoSlider">
+            <div class="facility-slider">
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Big Chess Board.jpg" />
+    <div class="facility-slider-caption">Big Chess Board</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Gazebo.jpg" />
+    <div class="facility-slider-caption">Gazebo</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Gym.jpg" />
+    <div class="facility-slider-caption">Gym</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Gym2.jpg" />
+    <div class="facility-slider-caption">Gym (Area 2)</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Lorong Kelas.jpg" />
+    <div class="facility-slider-caption">Lorong Kelas</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Rooftop Swimming Pool.jpg" />
+    <div class="facility-slider-caption">Rooftop Swimming Pool</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/SP2.jpg" />
+    <div class="facility-slider-caption">Swimming Pool 2</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Taman.jpg" />
+    <div class="facility-slider-caption">Taman</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Taman2.jpg" />
+    <div class="facility-slider-caption">Taman Area 2</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Taman3.jpg" />
+    <div class="facility-slider-caption">Taman Area 3</div>
+  </div>
+
+  <div class="facility-slider-item">
+    <img src="assets/images/facility/Tau Bridge.jpg" />
+    <div class="facility-slider-caption">Tau Bridge</div>
+  </div>
+
+</div>
+v>
+
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/parallax/jarallax.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/ytplayer/index.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+    <script>
+      const slider = document.querySelector(".facility-slider-container");
+
+      let speed = 1;
+
+      function autoSlide() {
+        slider.scrollLeft += speed;
+
+        if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+          slider.scrollLeft = 0;
+        }
+      }
+
+      let autoPlay = setInterval(autoSlide, 15);
+
+      slider.addEventListener("mousedown", () => clearInterval(autoPlay));
+      slider.addEventListener("touchstart", () => clearInterval(autoPlay));
+
+      function resume() {
+        clearInterval(autoPlay);
+        autoPlay = setInterval(autoSlide, 15);
+      }
+
+      slider.addEventListener("mouseup", () => setTimeout(resume, 2000));
+      slider.addEventListener("touchend", () => setTimeout(resume, 2000));
+    </script>
+  </body>
+</html>
